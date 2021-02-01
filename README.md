@@ -1,0 +1,2 @@
+# UFOs
+In this repository, I will build a table using data stored in a JavaScript array. I will also create filters to make this table fully dynamic, meaning that it will react to user input, and then place the table into an HTML file for easy viewing.  I will customize the webpage using Bootstrap, and equip my table with several fully functional filters that will allow users to interact with my visualizations.
