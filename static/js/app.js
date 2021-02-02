@@ -33,11 +33,42 @@ function buildTable(data) {
     });
   }
 
+function handleClick() {
+  // Grab the datetime value from the filter
+  let date = d3.select("#datetime").property("value");
+  let filteredData = tableData;
+
+   // Check to see if a date was entered and filter the
+  // data using that date.
+  if (date) {
+    // Apply `filter` to the table data to only keep the
+    // rows where the `datetime` value matches the filter value
+    filteredData = filteredData.filter(row => row.datetime === date);
+  };
+
+   // Rebuild the table using the filtered data
+  // @NOTE: If no date was entered, then filteredData will
+  // just be the original tableData.
+  buildTable(filteredData);
+};
+
+// Filter Button Feature to be consumed by HTML
+// By adding this, we're linking our code directly to the filter button. 
+// Also, by adding .on("click", handleClick);, we're telling D3 to execute our handleClick() function when the button with an id of filter-btn is clicked.
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
+
+
 
 /* ------------------------------------ Note Section -----------------------------
-D3 - D3 is a JavaScript library that produces sophisticated and highly dynamic graphics 
+D3 
+- "What is D3": D3 is a JavaScript library that produces sophisticated and highly dynamic graphics 
 in an HTML webpage. It is often used by data professionals to create dashboards, or a 
 collection of visual data (such as graphs and maps), for presentation.
+- "Listening for Activity on Webpage": Another aspect of D3.js is that it can listen for events that occur on a webpage, 
+such as a button click. The next code we add will be tied to the filter button we'll build on our webpage.
 
 
 
