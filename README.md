@@ -16,4 +16,4 @@ One drawback of this webpage is that it is hosted locally. Given my novice exper
 
 While this page is functional for an interested audience, I think a general audience might be more interested in general trends which this project does not offer by way of graphs (ex. pie chart with citings per country) or quick facts (ex. "most alien citings are in X month, in Y country"). Second to that, it does not allow the table, filtered or unfiltered to be exported. I would recommend that graphs be added and the table be made exportable to further develop this webpage.
 
-
+In short, the page may be more difficult to access for a non-technical audience, and could benefit from graphics displaying trends and the ability to export filtered or unfiltered versions of the table.
