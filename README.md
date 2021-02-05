@@ -8,6 +8,9 @@ However, that is simply the pre-text for the guided learning activity which culm
 ## Results
 _Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation._
 
+### Webpage Demo
+![](webpage_example.png)
+
 ## Summary
 One drawback of this webpage is that it is hosted locally. Given my novice experience with building webpages, bear with me while I elaborate. In order to filter the table and access the information, the index file, css file, both javascript files, and the image used herein must be downloaded to get the full experience. A fully functional webpage could be accessed with just the name of a webpage. Imagine trying to use any site, maybe facebook or amazon, and having to download and organize every page you wanted to use...exactly, people would try, get frustrated, and leave and that is if they tried at all. With all that said, for a tech savy community such as this, this webpage can afford the extraterrestrially inclined a novel pleasure. 
 
