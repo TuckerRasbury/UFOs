@@ -6,7 +6,7 @@ Hypothtically, this analysis is the brainchild of a UFO enthusiast who I follow 
 However, that is simply the pre-text for the guided learning activity which culminates in this project. In this repository, I built a table using data stored in a JavaScript array. Then I created filters to make the aforementioned table fully dynamic, meaning that that it will react to user input, and then place the table into an HTML file for easy viewing. Finally I customized the webpage using Bootstrap, and equipped the table with several fully functional filters that will allow users to interact with my visualizations.
 
 ## Results
-_Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation._
+To use the page, one needs to simply open it, direct their attention to the lefthand side of the page and follow the template/example text in the field to filter, and finally press enter. With that, the page will filter according to the parameters the user has provided.
 
 ### Webpage Demo
 ![](static/images/webpage_example.png)
