@@ -27,7 +27,7 @@ function buildTable(data) {
 
 // ------------------------------- DELIVERABLE #1 ------------------------------------
 // 1. Create a variable to keep track of all the filters as an object.
-// Rationale - let allows the block to be updated, but not altered using let again. This will be good since filters are repeatedly updated.
+// Rationale - let allows the block to be updated (which it will be), but not altered using let again. 
 // citation: https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
 let filters = {};
 
@@ -36,13 +36,13 @@ let filters = {};
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-    let changedElement = d3.select(this).select("input") //input refers to html line.
+    let changedElement = d3.select(this).select("input"); //input refers to html line.
 
     // 4b. Save the value that was changed as a variable, ie. from changedElement.
-    let elementValue = changedElement.property("value")
+    let elementValue = changedElement.property("value");
 
     // 4c. Save the id of the filter that was changed as a variable, ie. from changedElement.
-    let elementId = changedElement.attr("id")
+    let elementId = changedElement.attr("id");
 
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
@@ -50,7 +50,7 @@ function updateFilters() {
       filters[elementId] = elementValue
     }
     else {
-      delete filters[elementId]
+      delete filters[elementId];
     }
  
     // 6. Call function to apply all filters and rebuild the table
@@ -67,11 +67,13 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    
+    Object.entries(filters).forEach(([key,value]) => {
+      filteredData = filteredData.filter(row => row[key] == value)
+    });
   
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData)
-  }
+  };
   
   // 2. Attach an event to listen for changes to each filter
   // Line reac
